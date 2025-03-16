@@ -1,26 +1,72 @@
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: corporate;
+}
+@plugin "daisyui/theme" {
+  name: "corporate";
+  default: true;
+  --color-accent: #ee6c4d;
+  --color-primary: #3d5a80;
+}
 
 :root {
-  --background: #ffffff;
+  --background: white;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --highlight: #edfeff;
+  --accent: #ee6c4d;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+h2.text-left {
+  text-align: left;
+}
+section {
+  padding: 5rem 10rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.block {
+  line-height: 2.5;
+}
+
+.highlight {
+  background-color: var(--highlight);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer {
+  background-color: #293241;
+  color: white;
+}
+
+footer a:hover,
+.menu a:hover {
+  color: var(--accent);
+  background: none;
 }
