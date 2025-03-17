@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar shadow-md fixed">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,11 +35,11 @@ export default function Navbar() {
                 <Link href="#coaching">Coaching</Link>
               </li>
               <li>
-                <Link href="#about">Sobre mí</Link>
+                <Link href="#sobremi">Sobre mí</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#testimonios">Testimonios</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <Link href="#">
@@ -60,11 +60,11 @@ export default function Navbar() {
               <Link href="#coaching">Coaching</Link>
             </li>
             <li>
-              <Link href="#about">Sobre mí</Link>
+              <Link href="#sobremi">Sobre mí</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#testimonios">Testimonios</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="navbar-end">

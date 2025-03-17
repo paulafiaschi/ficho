@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Testimonials() {
   return (
     <>
-      <section>
-        <h2>Testimonios de Clientes</h2>
+      <section id="testimonios">
+        <h2>Testimonios</h2>
 
         <div className="card-container">
           <div className="card card-border bg-base-100 w-96">

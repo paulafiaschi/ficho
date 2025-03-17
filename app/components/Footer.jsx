@@ -14,11 +14,11 @@ export default function Footer() {
               <Link href="#coaching">Coaching</Link>
             </li>
             <li>
-              <Link href="#about">Sobre mí</Link>
+              <Link href="#sobremi">Sobre mí</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#testimonios">Testimonios</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <nav>

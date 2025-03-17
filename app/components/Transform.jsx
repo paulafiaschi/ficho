@@ -14,12 +14,11 @@ export default function Transform() {
           ></Image>
           <div>
             <div className="hero-text">
-              <h2 className="text-left">Transformá tu vida hoy</h2>
+              <h2 className="text-left">Transformá tu carrera profesional</h2>
               <p className="">
-                Reservá tu sesión de coaching hoy mismo y comenzá a alcanzar
-                esas metas personales y profesionales que tanto anhelás. Este es
-                el primer paso en tu camino hacia el éxito y el desarrollo
-                personal. No dudes en dar ese importante paso.
+                Reservá ahora tu sesión de coaching y comenzá a conquistar esas
+                metas profesionales que has postergado. Juntos convertiremos tus
+                desafíos laborales en oportunidades de crecimiento.
               </p>
               <Link className="btn btn-primary mt-5" href="#">
                 Agendá tu sesión
